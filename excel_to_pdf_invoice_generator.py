@@ -6,7 +6,7 @@ import os
 os.makedirs("PDFs", exist_ok=True)
 
 
-filepaths = glob.glob("app_4/*.xlsx")
+filepaths = glob.glob("*.xlsx")
 
 for filepath in filepaths:
           df = pd.read_excel(filepath, sheet_name="Sheet 1")
